@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login in</title>
+    <script src="./scripts/main.js" defer></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="left">
+        <div class="mask">
+            <img src="./img/odin-lined.png" draggable="false">
+            <h1 style="color: white;">Odin Login</h1>
+        </div>
+        <div class="footer">
+            <p>
+                Photo by <a href="https://unsplash.com/@beaverfernandez?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Beaver Fernandez</a> on <a href="https://unsplash.com/photos/a-woman-looking-out-of-a-window-while-holding-a-curtain-0bmvmHyI9zM?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+            </p>
+        </div>
+    </div>
+    <div class="right">
+        <div>
+            <div class="info">
+                <p>Donec posuere vulputate arcu. Phasellus accumsan cursus velit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed aliquam, nisi quis porttitor congue, elit erat euismod orci, ac placerat dolor lectus quis orci.</p>
+            </div>
+            <div class="login">
+                <h2>Let's go</h2>
+                <form>
+                    <div>
+                        <label for="firstname">First Name</label>
+                        <input  type="text" id="firstname" required>
+                    </div>
+    
+                    <div>
+                        <label for="lastname">Last Name</label>
+                        <input required type="text" id="lastname">
+                    </div>
+    
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" id="email">
+                    </div>
+    
+                    <div>
+                        <label for="phone">Phone</label>
+                        <input type="number" id="phone">
+                    </div>
+    
+                    <div>
+                        <label for="password">Password</label>
+                        <input required type="password" id="password">  
+                    </div>
+    
+                    <div>
+                        <label for="confirmPassword">Confirm Password</label>
+                        <input required type="password" id="confirmPassword">
+                    </div>
+
+                    <p id="passwordHint">Password don't match.</p>
+
+                    <button type="submit" id="placeboButton" style="visibility: collapse; position: absolute;"></button>
+                </form>
+            </div>
+        </div>
+        <div class="action">
+            <button type="submit" id="submitButton">Create Account</button>
+            <div>
+                <span>Already have an account?</span>
+                <a>Sigin in</a>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

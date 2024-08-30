@@ -1,0 +1,146 @@
+body, html {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-family: Roboto;
+
+    --theme-color: rgb(255, 204, 138);
+}
+
+div, img {
+    margin: 0px;
+}
+
+body {
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(212, 212, 212);
+}
+
+.left {
+    width: 60vw;
+    height: 100%;
+    background-image: url(../img/bg.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .mask {
+        align-self: stretch;
+        background-color: black;
+        opacity: 40%;
+        margin-top: 20vh;
+        text-align: center;
+        img {
+            height: 100px;
+            width: auto;
+            margin-top: 20px;
+        }
+    }
+    .footer {
+        color: white;
+        align-self: center;
+    }
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    
+    .info {
+        background-color: rgb(250, 250, 250);
+        padding: 50px;
+        display: flex;
+        align-items: flex-end;
+    }
+    .info p {
+        font-weight: bold;
+        font-size: 20px;
+        
+    }
+    .login {
+        padding-left: 50px;
+        padding-top: 50px;
+        box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.2);
+        position: relative;
+        h2 {
+            margin-top: 0px;
+        }
+        input {
+            border-radius: 5px;
+            border: 1px solid lightgray;
+            padding: 8px;
+            background-color: transparent;
+        }
+        div {
+            display: flex;
+            flex-direction: column;
+            flex-basis: 200px;
+        }
+        input:focus {
+            border: 1px solid var(--theme-color);
+            outline: 1px solid var(--theme-color);
+            box-shadow: 0 1px 10px -1px gray;
+        }
+        input:invalid{
+            border: 1px solid red;
+        }
+        .invalid {
+            border: 1px solid red;
+        }
+        #passwordHint {
+            margin: 0;
+            text-align: start;
+            position: absolute;
+            font-size: 10px;
+            bottom: 1%;
+            left: 7%;
+            color: red;
+            font-style: italic;
+            visibility: hidden;
+        }
+        form {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-evenly;
+            width: 500px;
+            gap: 30px;
+            padding-bottom: 20px;
+            
+        }
+
+    }
+    .action {
+        display: flex;
+        flex-direction: column;
+        padding: 50px;
+        gap: 20px;
+        background-color: rgb(250, 250, 250);
+        flex-grow: 1;
+        button {
+            padding: 10px;
+            border: none;
+            background-color: var(--theme-color);
+            border-radius: 10px;
+            width: 200px;
+        }
+        button:hover {
+            box-shadow: 0 1px 10px -5px gray;
+            background-color: rgb(255, 213, 159);
+        }
+        button:active {
+            background-color: rgb(255, 241, 223);
+
+        }
+        a {
+            color: var(--theme-color);
+            font-weight: bold;
+        }
+    }
+}
+
